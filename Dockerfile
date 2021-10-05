@@ -1,4 +1,4 @@
-FROM jboss/samplewar.war/wildfly
+FROM jboss/wildfly
 
 MAINTAINER Ayan Biswas thats4ayan@gmail.com
 
