@@ -61,7 +61,7 @@ pipeline {
                                    fileIncludePattern: '**/*.json',
                                    sortingMethod: 'ALPHABETICAL'
 
-          slackSend color: 'red', message: "${params.reportname} Tests failed. >> Click to view <$reportUrl|report>"
+
 
   	     }
 
@@ -76,7 +76,6 @@ pipeline {
                                             fileIncludePattern: '**/*.json',
                                             sortingMethod: 'ALPHABETICAL'
 
-          slackSend color: 'green', message: "${params.reportname} Tests passed. >> Click to view <$reportUrl|report>"
 
           }
 
