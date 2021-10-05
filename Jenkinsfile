@@ -38,6 +38,10 @@ pipeline{
             }
 
         }
+        stage 'Run Test'
+         script 
+            {sh "mvn clean test -Dcucumber.options=\"src/test/resources/features/ --tags @YourTagName\""}
+
 
     }
 
